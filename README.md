@@ -4,8 +4,8 @@ A basic AI tool for veterinary disease classification and recommendations.
 
 # Usage on Linux
 ```
-git clone
-cd
+git clone https://github.com/mard-llm/vetbert-basic
+cd vetbert-basic
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
