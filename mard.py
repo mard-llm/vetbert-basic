@@ -35,41 +35,6 @@ def vetbert_process(text):
         top_2_results = sorted_probs[:2]  # Take only the top 2 results
         return ", ".join(f"{label}: {prob:.4f}" for prob, label in top_2_results)
 
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-   
-
-
-    
-
-
-
-
-
-
 def chat(prompt, history):
     system_prompt = (
         "You are highly knowledgeable veterinary assistant developed by students of DCA CUSAT. "
