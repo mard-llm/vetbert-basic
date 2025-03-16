@@ -1,5 +1,5 @@
 gradio
 transformers
 torch
-joblib
-llama-cpp-python
+semantic-kernel[ollama]
+nest_asyncio

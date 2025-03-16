@@ -4,12 +4,26 @@ A basic AI tool for veterinary disease classification and recommendations.
 
 # Usage on Linux
 ```
-git clone https://github.com/mard-llm/vetbert-basic
+# Clone the repository
+git clone https://github.com/mard-llm/vetbert-basic.git
+
+# Navigate into the directory
 cd vetbert-basic
-python -m venv venv
+
+# Create a virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
 source venv/bin/activate
-pip install -r requirements.txt
-cat models/vetBERTDx.model_* > models/vetBERTDx.model
-wget -o models/Mistral-7B-v0.1-GGUF https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7b-v0.1.Q4_K_S.gguf?download=true
-python mard.py
+
+# Install dependencies from requirements.txt
+pip3 install -r requirements.txt
+
+# Install and start Ollama, then pull LLaMA 3.1 8B
+curl -fsSL https://ollama.com/install.sh | sh
+ollama serve &
+ollama pull llama3.1:8b
+
+# Run the chatbot
+python3 mard.py
 ```
