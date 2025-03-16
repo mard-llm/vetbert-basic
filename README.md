@@ -27,6 +27,6 @@ ollama pull llama3.1:8b
 # Run the chatbot
 python3 mard.py
 ```
-#Changing the Model
+# Changing the Model
 You can swap LLaMA 3.1 8B for another Ollama-supported model (e.g., Phi-3, Mistral) to adjust performance or resource use: 
 also change the model in the mard.py .
